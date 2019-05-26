@@ -1,19 +1,20 @@
 
 
 body {
-	background-color: #f4a70c;
+	background-color: #fcfff9;
 }
 
 
 header {
+    width: 100%;
 	margin: 10px auto;
 	background-color: #005a66;
 	border: 1px solid  #005a66;
-	box-shadow: 0 0 30px #f4a70c;
+	box-shadow: 0 0 10px #f4a70c;
     text-align: center;
-    font-size: 20px; 
+    font-size: 40px; 
     font-family: 'Quicksand', sans-serif;
-    border-radius: 10px;
+    border-radius: 0px;
  
     
 }
@@ -21,45 +22,111 @@ header {
 nav, ul {
     text-align: center;
     list-style-type: none;
+    color: #fcfff9;
    
        
 }
 
 
 header img, .headings {
+  
+    width: 200px;
 	display: inline-block;
 	vertical-align: middle;
     margin: 5px;
     color: #fcfff9;
-    font-size: 40px;
+    font-size:30px;
     font-style: normal;
+    text-align: center;
+   
+   
     
 }
+
 
 .motto {
-    font-size: 15px;
+    font-size: 12px;
     font-style: italic;
-   
+    margin-top: -40px;
+    padding-left: -10px;
+     
 
 }
    
  
-.box1 {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0em;
-    display: grid;
-    grid-template-rows:20px 20px;
-    grid-gap: 10px;
-    background: #005a66;
-    border-radius: 10px;
-    margin: 10px auto;
+.navclass > ul {
+    background:  #005a66;
+    color:#fcfff9;
+    font-size: 25px;
+    box-shadow: 0 0 10px  #f4a70c;
+    font-family: 'Quicksand', sans-serif;
     
+}
 
+
+.navclass > ul > li {
+   
+    display: inline-block;
+    
+     
+    
+}
+.navclass li a { 
+    color: #fcfff9;
+    text-decoration: none;
+    padding: 5px;
+    
+  
+}
+
+.navclass a:hover {
+    color: #f4a70c; 
+    font-weight: bolder;
  
+	}
+
+
+li a:hover:not(.active) {
+    background-color: #f4a70c;
+    color: #005a66;
+    }
+    
+    .active {
+    background-color:  #f4a70c;
+  
+    }
+
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+  
 }
 
-.box1:hover {
-    background-color: #fcfff9;
+.banner {
+    width: 50%;
+    margin: 1px auto;
+    display: block;
 }
+.articlephoto {
+    width: 25%;
+    margin: 1px auto;
+    display: block;
+}
+p {
+    text-align: center;
+    font-size: 30px;
+}
+    
+.responsive li { display: block; }
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+    .navclass li:first-child { display: none;	}
+      .navclass li {
+           display: inline-block; 
+        margin-right: 1rem;}	
+      .navclass li a { color:#fcfff9;}
+  }
 
