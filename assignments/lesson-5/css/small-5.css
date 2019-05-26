@@ -57,7 +57,7 @@ header img, .headings {
 .navclass > ul {
     background:  #005a66;
     color:#fcfff9;
-    font-size: 25px;
+    font-size: 20px;
     box-shadow: 0 0 10px  #f4a70c;
     font-family: 'Quicksand', sans-serif;
     
@@ -100,7 +100,7 @@ li a:hover:not(.active) {
 h1 {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
   
 }
 
@@ -116,7 +116,7 @@ h1 {
 }
 p {
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
 }
     
 .responsive li { display: block; }
