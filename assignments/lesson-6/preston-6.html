@@ -17,7 +17,7 @@
     <!-- HEADER HERE -->
     <header class="clearfix">
         <figure class="logo">
-            <img src="images/weather.png" alt="Weather Logo">
+            <img src="images/weather.png" alt="Weather Logo" srcset="images/weather1.png 1x, images/weather2.png 2x, images/weather3.png 3x ">
         </figure>
 
         <div class="headings">
@@ -46,11 +46,12 @@
     <main>
         <h2 class="pagename">Preston Idaho</h2>
         <div class="herodiv">
-            <img class="bannerphoto" src="images/cit230_image_franklinOriginal.jpeg" alt="Sunny Day">
+            <img class="bannerphoto" src="images/cit230_image_franklinOriginal.jpeg" sizes="100vw" 
+            srcset="images/cit230_image_franklinOriginal_400.jpg 400w, images/cit230_image_franklinOriginal_800.jpg 800w, images/cit230_image_franklinOriginal_1200.jpg 1200w"  alt="Sunny Day">
             <section class="stats">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="value1">Sunny</span></p>
-                <p>High:76&deg;F</p>
+                <p>High: 76&deg;F</p>
                 <p>Wind Chill: 77&deg;F</p>
                 <p>Humidity: 51%</p>
                 <p>Wind speed: 46 mph</p>
@@ -59,7 +60,11 @@
 
         <div class="fivedaysforecast">
             <table>
-              
+                <tr>
+                    <h2>Five Days Forecast</h2>
+
+                </tr>
+
                 <tr>
                     <td>Wed</td>
                     <td>Thu</td>
@@ -90,30 +95,55 @@
             <article>
                 <header class="articletitle">
                     <h3>Loren Ipsum</h3>
-                    <p>By Loren Ipsum</p>
+                    <h6>By Loren Ipsum</h6>
                 </header>
 
                 <figure class="photo1">
                     <img src="images/People.jpg" alt="People">
-                    <figcaption>Sunny day in Preston</figcaption>
+                    <figcaption>
+                        <h6>Sunny day in Preston</h6>
+                    </figcaption>
 
                 </figure>
-                <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus convallis
-                    felis, eget
-                    viverra sem sagittis at. Sed vulputate ante sed lacus luctus, quis gravida tellus semper. Donec elit
-                    sem, sagittis eu augue in, cursus dapibus lectus. Fusce sit amet blandit mi. Sed mattis metus sed
-                    lacinia malesuada. Quisque auctor nunc sed efficitur dignissim. Mauris non pellentesque nisi. Duis
-                    quis lacus et odio placerat lobortis. Mauris maximus mi non lacus ullamcorper rutrum. Phasellus
-                    dignissim in sem a lacinia.
+                <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum ipsum quis
+                    faucibus auctor. Duis id metus est. Phasellus euismod quam ut odio sodales condimentum. Maecenas
+                    rutrum eu orci vel maximus. Sed molestie risus vitae est porta, et congue velit varius. Duis vel
+                    ipsum sit amet arcu lobortis ornare. Integer vestibulum vel sem et molestie. Sed molestie varius
+                    nisi, at maximus tellus euismod eu. Nullam sed fermentum orci. In consectetur purus nec felis
+                    feugiat placerat. Proin non dui vitae nulla pellentesque pretium. Integer hendrerit hendrerit eros,
+                    ac mattis lorem ullamcorper nec. Curabitur vehicula porttitor semper. Phasellus euismod, leo vitae
+                    porttitor tristique, nisl ante aliquam felis, sollicitudin sagittis tellus magna vel erat. Etiam
+                    porttitor felis dignissim lorem facilisis sodales.
 
-                    In iaculis, neque ac congue molestie, metus magna faucibus quam, eu tincidunt arcu tellus sed lacus.
-                    Ut eu mi aliquet massa tincidunt elementum. Donec porttitor massa non nisl gravida bibendum. Nulla
-                    lectus tortor, consectetur sit amet ultrices et, lobortis id nulla. Duis lacus metus, viverra
-                    pulvinar ornare sit amet, faucibus nec odio. Vivamus quis feugiat elit. Vivamus id maximus dolor.
-                    Morbi eu nisl vel felis finibus tincidunt. Duis tincidunt pulvinar imperdiet. Donec lobortis ac
-                    ligula id tristique. Integer vel tortor ut purus mollis dapibus quis at sapien. Aenean posuere,
-                    lectus id lacinia vestibulum, est elit mollis diam, quis consequat augue tortor vel massa. Curabitur
-                    fringilla vehicula fringilla. Fusce malesuada nec libero ac luctus.
+                    Morbi ac dignissim tortor. Etiam ut dictum eros. Maecenas eget faucibus est. Sed laoreet nulla
+                    libero, sed commodo purus semper vel. In suscipit libero quis tellus aliquet, et suscipit orci
+                    aliquet. Maecenas eget est sed nisl fringilla maximus. Nullam pulvinar, lacus et varius dictum,
+                    dolor mi ullamcorper ante, ac condimentum magna mauris sit amet felis. Donec dapibus est sed sapien
+                    mattis volutpat. Quisque iaculis tempus molestie. Morbi mollis gravida turpis ac luctus. Phasellus
+                    et leo eget elit molestie egestas sed sit amet sapien. Donec at fringilla felis. Suspendisse non
+                    fringilla felis, ut imperdiet lorem. Nullam dapibus sed quam sed aliquet. Proin viverra lobortis
+                    augue vitae faucibus.
+
+                    Quisque viverra, felis eu rhoncus faucibus, sapien lectus dictum ante, id tempus tortor dolor ac
+                    mauris. Vivamus ut mi eget nisl pellentesque tristique. Quisque in suscipit elit. Proin dapibus
+                    sodales nibh, sit amet mollis felis volutpat in. Vivamus convallis vitae libero eu finibus.
+                    Suspendisse consequat tincidunt justo, vel faucibus turpis. Sed accumsan tincidunt nunc et rutrum.
+                    Morbi vel nibh sit amet nunc lacinia tempus quis non ipsum. Etiam quis laoreet mi. Mauris est risus,
+                    tincidunt at lectus posuere, pretium tempor tellus. Aliquam erat volutpat. Quisque vitae velit eu
+                    neque pellentesque consectetur ac vestibulum ipsum. Quisque odio sem, venenatis sit amet tortor a,
+                    tristique mattis justo. Integer accumsan metus ipsum, ut vestibulum tortor consectetur et. Vivamus
+                    et tristique lorem.
+
+                    Vestibulum a arcu elit. Donec malesuada libero est, in pretium mi viverra vitae. Orci varius natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut id sollicitudin nisl, vel
+                    dapibus tellus. Suspendisse sit amet justo sed tortor varius rutrum. Ut faucibus at tortor ut
+                    varius. Etiam vel laoreet purus. Nam non velit odio. In hac habitasse platea dictumst.
+
+                    Vivamus cursus quam quis nisl lobortis rhoncus. Sed id est quis diam varius interdum. Suspendisse
+                    gravida ligula fermentum, congue nibh sit amet, mollis orci. Sed bibendum mauris et tortor
+                    vestibulum, vel dignissim massa porta. Morbi sed ullamcorper lectus, non varius odio. Duis faucibus
+                    lacus est, ut dapibus arcu tristique in. Quisque scelerisque ex finibus lacus blandit, ut ornare est
+                    varius.
 
                 </p>
             </article>
@@ -128,7 +158,11 @@
 
     <!-- FOOTER HERE -->
     <footer>
-        &copy; Copyright 2019, Giselle Araújo | Utah |
+        <div class="footer">
+
+
+            &copy; Copyright 2019, Giselle Araújo | Utah |
+        </div>
 
     </footer>
 </body>

@@ -24,16 +24,19 @@ header {
     border-radius: 0px;
      
 }
+header h6 {
+
+    margin-top: -20px;
+}
 
 header figure.logo {
-    width: 150px;
-    float:left;
-    margin: 0 ;   
+      float: left;
+       margin:0;
    
 
 }
 
-header img, .headings {
+.headings {
   
     width: 100%;	
 	vertical-align:middle;
@@ -48,6 +51,8 @@ header img, .headings {
 .bannerphoto {
     width:100%;
     height: 400px;
+    vertical-align:middle;
+    
 
 
 }
@@ -121,6 +126,15 @@ main {
 }
 
 .pagename {
+    width: 100%;	
+	vertical-align:middle;
+    color: #005a66;
+    font-size:40px;
+    font-style: bold;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'Quicksand', sans-serif;
+
 
 
 }
@@ -132,6 +146,7 @@ main {
 
 .fivedaysforecast {
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
 
 
 }
@@ -140,10 +155,12 @@ table {
 
     text-align: center;
     display: inline-block;
+    
+    font-size: 15px;
 }
 
 .weathericon {
-    height: 60px;
+    height: 40px;
 
 }
 
@@ -173,34 +190,59 @@ article {
 
 .articletitle {
     width:100%;
-    font-size: 15px;
+    font-size: 20px;
+  
 
 }
 
-.photo1{
+main figure.photo1{
     width:50%;    
-    margin: 2rem;
-    float: center;
+    margin: 2% 2% 0 2%;
+    float: right;
+}
 
+main figure.photo1 img{
+    width:100%;
+    border-radius: 10px;
+}
+
+main figure.photo1 figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -20px;
+    
+    
+  
 }
 
 .text {
     width: 100%;
     padding: 10px;
+    margin: 0;
+    
+    
        
-
 
 }
 
 /*----------- FOOTER --------------*/
 
+footer .footer {
+
+    width: 100%;
+    height: 50px;
+    margin: 5px 2% 0 2%;
+	background-color: #005a66;
+    font-family: 'Quicksand', sans-serif;
+    color:#fcfff9;
+    text-align: center;
+}
+
 
 /* Media Query for medium + screens */
 @media only screen and (min-width: 32.5em) {
-    .navclass li:first-child { display: none;	}
-      .navclass li {
-           display: inline-block; 
-        margin-right: 1rem;}	
+    .navclass li:first-child { display: none}
+      .navclass li {display: inline-block; margin-right: 1rem;}	
       .navclass li a { color:#fcfff9;}
   }
 
