@@ -1,48 +1,56 @@
 
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+*html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
+/*----------- apply a natural box layout model to all elements --------------*/
+
+* {-webkit-box-sizing: border-box; box-sizing: border-box;} 
+
+
+/*----------- BODY --------------*/
 body {
 	background-color: #fcfff9;
 }
 
-
+/*----------- HEADER --------------*/
 header {
     width: 100%;
 	margin: 10px auto;
 	background-color: #005a66;
 	border: 1px solid  #005a66;
-
     text-align: center;
     font-size: 25px; 
     font-family: 'Quicksand', sans-serif;
     border-radius: 0px;
- 
-    
+     
 }
 
-nav, ul {
-    text-align: center;
-    list-style-type: none;
-    color: #fcfff9;
+header figure.logo {
+    width: 150px;
+    float:left;
+    margin: 0 ;   
    
-       
-}
 
+}
 
 header img, .headings {
   
-    width: 200px;
-	display: inline-block;
-	vertical-align: middle;
-    margin: 5px;
+    width: 100%;	
+	vertical-align:middle;
     color: #fcfff9;
     font-size:40px;
     font-style: normal;
     text-align: center;
+    margin-bottom: 0px;
    
-   
-    
 }
 
+.bannerphoto {
+    width:100%;
+    height: 400px;
+
+
+}
 
 .motto {
     font-size: 12px;
@@ -50,9 +58,18 @@ header img, .headings {
     margin-top: -40px;
     padding-left: -10px;
      
-
 }
    
+/*----------- NAVIGATION --------------*/
+
+nav, ul {
+    text-align: center;
+    list-style-type: none;
+    color: #fcfff9;
+
+}
+
+
  
 .navclass > ul {
     background:  #005a66;
@@ -67,8 +84,6 @@ header img, .headings {
 .navclass > ul > li {
    
     display: inline-block;
-    
-     
     
 }
 .navclass li a { 
@@ -85,7 +100,6 @@ header img, .headings {
  
 }
 
-
 li a:hover:not(.active) {
     background-color: #f4a70c;
     color: #005a66;
@@ -96,15 +110,41 @@ li a:hover:not(.active) {
   
 }
 
+
+
+
+/*----------- MAIN --------------*/
 main {
+   
     max-width:820px;
     margin:0 auto;
 }
 
+.pagename {
 
+
+}
 .herodiv {
     margin: 10px auto;
     position: relative;
+}
+
+
+.fivedaysforecast {
+    text-align: center;
+
+
+}
+
+table {
+
+    text-align: center;
+    display: inline-block;
+}
+
+.weathericon {
+    height: 60px;
+
 }
 
 .stats {
@@ -123,15 +163,36 @@ main {
 
 article {
 
-    width: 960px;
+    width: 100%;
     color: #fcfff9;
     background: #f4a70c;
-    text-align: left;
-    font-size: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
-img {width: 960px;}
+.articletitle {
+    width:100%;
+    font-size: 15px;
 
+}
+
+.photo1{
+    width:50%;    
+    margin: 2rem;
+    float: center;
+
+}
+
+.text {
+    width: 100%;
+    padding: 10px;
+       
+
+
+}
+
+/*----------- FOOTER --------------*/
 
 
 /* Media Query for medium + screens */
@@ -143,3 +204,9 @@ img {width: 960px;}
       .navclass li a { color:#fcfff9;}
   }
 
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

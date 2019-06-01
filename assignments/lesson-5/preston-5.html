@@ -5,16 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>SeasonFeel</title>
-    <meta name="description" content="Preston page.">    
+    <meta name="description" content="Preston page.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small-5.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-    <header>
-        <img src="images/weather.png" width=200 alt="Weather Logo">
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/weather.png" alt="Weather Logo">
+        </figure>
+
         <div class="headings">
             <h2>SeasonFeel</h2>
             <div class="motto">
@@ -23,33 +28,38 @@
         </div>
     </header>
 
-    <nav class="navclass">       
-        <ul>        
-            <li><a href="#">Menu</a></li>
-            <li class="active"><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+    <!-- NAVIGATION HERE -->
+    <nav class="navclass">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#" title="Menu">Menu</a></li>
+            <li class="active"><a href="#" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="#" title="Storm Center">Storm Center</a></li>
+            <li><a href="#" title="Gallery">Gallery</a></li>
         </ul>
-       
+
     </nav>
+
+    <!-- CONTENT HERE -->
     <main>
-        <h2>Preston Idaho</h2>
+        <h2 class="pagename">Preston Idaho</h2>
         <div class="herodiv">
-            <img src="images/idaho.jpg">
+            <img class="bannerphoto" src="images/cit230_image_franklinOriginal.jpeg" alt="Sunny Day">
             <section class="stats">
                 <h3>Weather Summary</h3>
-                <p>Currently: <span id="value1">Sunny</span</p>
-                <p>High:76 F</p>
-                <p>Wind Chill: 77 F</p>
-                <p>Humidity: 51% F</p>
+                <p>Currently: <span id="value1">Sunny</span></p>
+                <p>High:76&deg;F</p>
+                <p>Wind Chill: 77&deg;F</p>
+                <p>Humidity: 51%</p>
                 <p>Wind speed: 46 mph</p>
             </section>
         </div>
 
-        <div>
+        <div class="fivedaysforecast">
             <table>
+              
                 <tr>
                     <td>Wed</td>
                     <td>Thu</td>
@@ -58,23 +68,55 @@
                     <td>Sun</td>
                 </tr>
                 <tr>
-                    <td>89 F</td>
-                    <td>87 F</td>
-                    <td>91 F</td>
-                    <td>86 F</td>
-                    <td>65 F</td>
+                    <td><img class=weathericon src="images/sunicon.jpg"></td>
+                    <td><img class=weathericon src="images/sunicon.jpg"></td>
+                    <td><img class=weathericon src="images/sunicon.jpg"></td>
+                    <td><img class=weathericon src="images/sunicon.jpg"></td>
+                    <td><img class=weathericon src="images/sunicon.jpg"></td>
                 </tr>
-               
+                <tr>
+                    <td>89&deg;F</td>
+                    <td>87&deg;F</td>
+                    <td>91&deg;F</td>
+                    <td>86&deg;F</td>
+                    <td>65&deg;F</td>
+                </tr>
+
             </table>
         </div>
 
-        <section>	
-                <article>
-                    <header>
-                        <h3>Article title</h3>
-                        <p>By Writer</p>
-                    </header>
-                    <p> PARAGRAPH></p>
+        <section>
+            <h2></h2>
+            <article>
+                <header class="articletitle">
+                    <h3>Loren Ipsum</h3>
+                    <p>By Loren Ipsum</p>
+                </header>
+
+                <figure class="photo1">
+                    <img src="images/People.jpg" alt="People">
+                    <figcaption>Sunny day in Preston</figcaption>
+
+                </figure>
+                <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus convallis
+                    felis, eget
+                    viverra sem sagittis at. Sed vulputate ante sed lacus luctus, quis gravida tellus semper. Donec elit
+                    sem, sagittis eu augue in, cursus dapibus lectus. Fusce sit amet blandit mi. Sed mattis metus sed
+                    lacinia malesuada. Quisque auctor nunc sed efficitur dignissim. Mauris non pellentesque nisi. Duis
+                    quis lacus et odio placerat lobortis. Mauris maximus mi non lacus ullamcorper rutrum. Phasellus
+                    dignissim in sem a lacinia.
+
+                    In iaculis, neque ac congue molestie, metus magna faucibus quam, eu tincidunt arcu tellus sed lacus.
+                    Ut eu mi aliquet massa tincidunt elementum. Donec porttitor massa non nisl gravida bibendum. Nulla
+                    lectus tortor, consectetur sit amet ultrices et, lobortis id nulla. Duis lacus metus, viverra
+                    pulvinar ornare sit amet, faucibus nec odio. Vivamus quis feugiat elit. Vivamus id maximus dolor.
+                    Morbi eu nisl vel felis finibus tincidunt. Duis tincidunt pulvinar imperdiet. Donec lobortis ac
+                    ligula id tristique. Integer vel tortor ut purus mollis dapibus quis at sapien. Aenean posuere,
+                    lectus id lacinia vestibulum, est elit mollis diam, quis consequat augue tortor vel massa. Curabitur
+                    fringilla vehicula fringilla. Fusce malesuada nec libero ac luctus.
+
+                </p>
+            </article>
         </section>
 
 
@@ -82,8 +124,12 @@
 
 
     </main>
+
+
+    <!-- FOOTER HERE -->
     <footer>
-        &copy; Copyright 2019, Giselle Araújo | Utah
+        &copy; Copyright 2019, Giselle Araújo | Utah |
+
     </footer>
 </body>
 
