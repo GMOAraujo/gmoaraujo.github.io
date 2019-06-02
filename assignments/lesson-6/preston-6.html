@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/small-6.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/menu.js"></script>
+
 </head>
 
 
@@ -17,7 +19,8 @@
     <!-- HEADER HERE -->
     <header class="clearfix">
         <figure class="logo">
-            <img src="images/weather.png" alt="Weather Logo" srcset="images/weather1.png 1x, images/weather2.png 2x, images/weather3.png 3x ">
+            <img src="images/weather.png" alt="Weather Logo" 
+            srcset="images/weather1.png 1x, images/weather2.png 2x, images/weather3.png 3x ">
         </figure>
 
         <div class="headings">
@@ -31,8 +34,8 @@
     <!-- NAVIGATION HERE -->
     <nav class="navclass">
         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#" title="Menu">Menu</a></li>
+            
+            <li><a href="#" title="Menu"onclick="toggleMenu()">&#9776; Menu</a></li>
             <li class="active"><a href="#" title="Preston">Preston</a></li>
             <li><a href="#" title="Soda Springs">Soda Springs</a></li>
             <li><a href="#" title="Fish Haven">Fish Haven</a></li>
@@ -134,16 +137,6 @@
                     tristique mattis justo. Integer accumsan metus ipsum, ut vestibulum tortor consectetur et. Vivamus
                     et tristique lorem.
 
-                    Vestibulum a arcu elit. Donec malesuada libero est, in pretium mi viverra vitae. Orci varius natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut id sollicitudin nisl, vel
-                    dapibus tellus. Suspendisse sit amet justo sed tortor varius rutrum. Ut faucibus at tortor ut
-                    varius. Etiam vel laoreet purus. Nam non velit odio. In hac habitasse platea dictumst.
-
-                    Vivamus cursus quam quis nisl lobortis rhoncus. Sed id est quis diam varius interdum. Suspendisse
-                    gravida ligula fermentum, congue nibh sit amet, mollis orci. Sed bibendum mauris et tortor
-                    vestibulum, vel dignissim massa porta. Morbi sed ullamcorper lectus, non varius odio. Duis faucibus
-                    lacus est, ut dapibus arcu tristique in. Quisque scelerisque ex finibus lacus blandit, ut ornare est
-                    varius.
 
                 </p>
             </article>
@@ -161,11 +154,11 @@
         <div class="footer">
 
 
-            &copy; Copyright 2019, Giselle Araújo | Utah |
+            &copy; Copyright , Giselle Araújo | Utah |
         </div>
 
     </footer>
-    <script src="currentdate.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

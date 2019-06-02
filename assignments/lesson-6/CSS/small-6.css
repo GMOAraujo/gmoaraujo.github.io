@@ -86,10 +86,13 @@ nav, ul {
 }
 
 
-.navclass > ul > li {
+.navclass li:first-child {
    
-    display: inline-block;
-    
+    display:block;
+}
+
+.navclass li {
+    display:none;
 }
 .navclass li a { 
     color: #fcfff9;
@@ -218,11 +221,12 @@ main figure.photo1 figcaption {
 .text {
     width: 100%;
     padding: 10px;
-    margin: 0;
-    
-    
-       
+    margin: 0;    
 
+}
+
+.responsive li{
+    display: block;
 }
 
 /*----------- FOOTER --------------*/
@@ -240,7 +244,7 @@ footer .footer {
 
 
 /* Media Query for medium + screens */
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 45em) {
     .navclass li:first-child { display: none}
       .navclass li {display: inline-block; margin-right: 1rem;}	
       .navclass li a { color:#fcfff9;}
