@@ -108,7 +108,7 @@ nav, ul {
  
 }
 
-
+.responsive li { display: block; }
 
 li a:hover:not(.active) {
     background-color: #f4a70c;
@@ -228,7 +228,7 @@ main figure.photo1 figcaption {
 }
 
 .responsive li{
-    display: block;
+    display: table-column-group;
 }
 
 /*----------- FOOTER --------------*/
