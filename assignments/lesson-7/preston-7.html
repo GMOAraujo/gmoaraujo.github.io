@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>SeasonFeel</title>
+    <meta name="description" content="Preston page.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large-7.css">
+    <link rel="stylesheet" href="css/small-7.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/weather.png" alt="Weather Logo"
+                srcset="images/weather1.png 1x, images/weather2.png 2x, images/weather3.png 3x">
+        </figure>
+
+        <div class="headings">
+            <h2>SeasonFeel</h2>
+            <div class="motto">
+                <h2>The weather you feel</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="navclass">
+        <ul>
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="active"><a href="#" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="#" title="Storm Center">Storm Center</a></li>
+            <li><a href="#" title="Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h2 class="pagename">Preston Idaho</h2>
+        <div class="herodiv">
+            <img class="bannerphoto" src="images/cit230_image_franklinOriginal.jpeg" alt="Sunny Day" sizes="100vw"
+                srcset="images/cit230_image_franklinOriginal_400.jpg 400w, images/cit230_image_franklinOriginal_800.jpg 800w, images/cit230_image_franklinOriginal_1200.jpg 1200w">
+            <section class="stats">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="value1">Sunny</span></p>
+                <p>High: 76&deg; F</p>
+                <p>Wind Chill: 77&deg; F</p>
+                <p>Humidity: 51%</p>
+                <p>Wind speed: 46 mph</p>
+            </section>
+        </div>
+
+        <div class="fivedaysforecast">
+
+            <h2>Five Days Forecast</h2>
+            <table>
+
+                <tr>
+                    <td>Wed</td>
+                    <td>Thu</td>
+                    <td>Fri</td>
+                    <td>Sat</td>
+                    <td>Sun</td>
+                </tr>
+                <tr>
+                    <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
+                    <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"> </td>
+                    <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
+                    <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
+                    <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
+                </tr>
+                <tr>
+                    <td>89&deg;F</td>
+                    <td>87&deg;F</td>
+                    <td>91&deg;F</td>
+                    <td>86&deg;F</td>
+                    <td>65&deg;F</td>
+                </tr>
+
+            </table>
+        </div>
+
+
+       
+
+
+        <article class="container">
+            <header class="articletitle">
+                <h3>Loren Ipsum</h3>
+                <h6>By Loren Ipsum</h6>
+            </header>
+
+            <figure class="photo1">
+                <img src="images/People.jpg" alt="People">
+                <figcaption>
+                    <h6>Sunny day in Preston</h6>
+                </figcaption>
+
+            </figure>
+            <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum ipsum quis
+                faucibus auctor. Duis id metus est. Phasellus euismod quam ut odio sodales condimentum. Maecenas
+                rutrum eu orci vel maximus. Sed molestie risus vitae est porta, et congue velit varius. Duis vel
+                ipsum sit amet arcu lobortis ornare. Integer vestibulum vel sem et molestie. Sed molestie varius
+                nisi, at maximus tellus euismod eu. Nullam sed fermentum orci. In consectetur purus nec felis
+                feugiat placerat. Proin non dui vitae nulla pellentesque pretium. Integer hendrerit hendrerit eros,
+                ac mattis lorem ullamcorper nec. Curabitur vehicula porttitor semper. Phasellus euismod, leo vitae
+                porttitor tristique, nisl ante aliquam felis, sollicitudin sagittis tellus magna vel erat. Etiam
+                porttitor felis dignissim lorem facilisis sodales.
+
+                Morbi ac dignissim tortor. Etiam ut dictum eros. Maecenas eget faucibus est. Sed laoreet nulla
+                libero, sed commodo purus semper vel. In suscipit libero quis tellus aliquet, et suscipit orci
+                aliquet. Maecenas eget est sed nisl fringilla maximus. Nullam pulvinar, lacus et varius dictum,
+                dolor mi ullamcorper ante, ac condimentum magna mauris sit amet felis. Donec dapibus est sed sapien
+                mattis volutpat. Quisque iaculis tempus molestie. Morbi mollis gravida turpis ac luctus. Phasellus
+                et leo eget elit molestie egestas sed sit amet sapien. Donec at fringilla felis. Suspendisse non
+                fringilla felis, ut imperdiet lorem. Nullam dapibus sed quam sed aliquet. Proin viverra lobortis
+                augue vitae faucibus.
+
+            </p>
+        </article>
+    
+
+    </main>
+
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="footer">
+
+
+            &copy;Copyright2019, Giselle Araújo | Utah |
+            <span id="renderTime"></span>
+            <span id="toggleMenu"></span>
+           
+        
+        </div>
+
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
+
+
+</body>
+
+</html>

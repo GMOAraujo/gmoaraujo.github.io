@@ -1,64 +1,259 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+*html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+
+* {-webkit-box-sizing: border-box; box-sizing: border-box;} 
 
 
+/*----------- BODY --------------*/
 body {
 	background-color: #fcfff9;
 }
 
-
+/*----------- HEADER --------------*/
 header {
+    width: 100%;
 	margin: 10px auto;
 	background-color: #005a66;
 	border: 1px solid  #005a66;
-	box-shadow: 0 0 10px #f4a70c;
     text-align: center;
-    font-size: 10px; 
+    font-size: 25px; 
     font-family: 'Quicksand', sans-serif;
     border-radius: 0px;
- 
-    
+     
 }
+header h6 {
+
+    margin-top: -20px;
+}
+
+header figure.logo {
+      float: left;
+       margin:0;
+   
+
+}
+
+.headings {
+  
+    width: 100%;	
+	vertical-align:middle;
+    color: #fcfff9;
+    font-size:40px;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 0px;
+   
+}
+
+.bannerphoto {
+    width:100%;
+    height: 400px;
+    vertical-align:middle;
+    
+
+
+}
+
+.motto {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: -40px;
+    padding-left: -10px;
+     
+}
+   
+/*----------- NAVIGATION --------------*/
 
 nav, ul {
     text-align: center;
     list-style-type: none;
     color: #fcfff9;
-   
-       
-}
-
-
-header img, .headings {
-	display: inline-block;
-	vertical-align: middle;
-    margin: 5px;
-    color: #fcfff9;
-    font-size: 30px;
-    font-style: normal;
-    
-}
-
-.motto {
-    font-size: 15px;
-    font-style: italic;
-   
 
 }
-   
+
+
  
 .navclass > ul {
-    background:  #f4a70c;
+    background:  #005a66;
     color:#fcfff9;
     font-size: 20px;
-    text-decoration: none;
+    box-shadow: 0 0 10px  #f4a70c;
+    font-family: 'Quicksand', sans-serif;
     
+}
+
+
+.navclass li:first-child {
    
+    display:block;
+}
+
+.navclass li {
+    display:none;
+}
+.navclass li a { 
+    color: #fcfff9;
+    text-decoration: none;
+    padding: 5px;
+    
+  
+}
+
+.navclass a:hover {
+    color: #f4a70c; 
+    font-weight: bolder;
+ 
+}
+
+.responsive li { display: block; }
+
+li a:hover:not(.active) {
+    background-color: #f4a70c;
+    color: #005a66;
+}
+    
+.active {
+    background-color:  #f4a70c;
+  
+}
+
+
+
+
+/*----------- MAIN --------------*/
+main {
+   
+    max-width:820px;
+    margin:0 auto;
+}
+
+.pagename {
+    width: 100%;	
+	vertical-align:middle;
+    color: #005a66;
+    font-size:40px;
+    font-style: bold;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'Quicksand', sans-serif;
+
+
+
+}
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+
+.fivedaysforecast {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+
+table {
+
+    text-align: center;
+    display: inline-block;
+    
+    font-size: 20px;
+}
+
+.weathericon {
+    height: 40px;
+
+}
+
+.stats {
+	position: absolute;
+	top: 25px;
+	right: 50px;
+	background: radial-gradient(#eee, #fcf125);
+	border:1px solid #fcf125;
+	padding:1.5rem;
+    box-shadow:0 0 30px #fcf125;
+    opacity: 0.8;
+    font-family: 'Quicksand', sans-serif;
+
+   
+}
+
+article {
+
+    width: 100%;
+    color: #fcfff9;
+    background: #f4a70c;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
     
 }
 
-.navclass > ul > li{
-    text-decoration: none;
-    display:inline-block;
-    padding: 0px 20px;
-    margin: 10px;
+.articletitle {
+    width:100%;
+    font-size: 20px;
+  
 
 }
+
+main figure.photo1{
+    width:50%;    
+    margin: 2% 2% 0 2%;
+    float: right;
+}
+
+main figure.photo1 img{
+    width:100%;
+    border-radius: 10px;
+}
+
+main figure.photo1 figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -20px;
+    
+    
+  
+}
+
+.text {
+    width: 100%;
+    padding: 10px;
+    margin: 0;    
+
+}
+
+.responsive li{
+    display: table-column-group;
+}
+
+/*----------- FOOTER --------------*/
+
+footer .footer {
+
+    width: 100%;
+    height: 50px;
+    margin: 5px 2% 0 2%;
+	background-color: #005a66;
+    font-family: 'Quicksand', sans-serif;
+    color:#fcfff9;
+    text-align: center;
+}
+
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 45em) {
+    .navclass li:first-child { display: none}
+      .navclass li {display: inline-block; margin-right: 1rem;}	
+      .navclass li a { color:#fcfff9;}
+  }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
