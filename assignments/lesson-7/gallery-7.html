@@ -18,47 +18,73 @@
 <body>
     <!-- HEADER HERE -->
     <header class="clearfix">
-            <figure class="logo">
-                <img src="images/weather.png" alt="Weather Logo"
-                    srcset="images/weather1.png 1x, images/weather2.png 2x, images/weather3.png 3x">
-            </figure>
-    
-            <div class="headings">
-                <h2>SeasonFeel</h2>
-                <div class="motto">
-                    <h2>The weather you feel</h2>
-                </div>
+        <figure class="logo">
+            <img src="images/weather.png" alt="Weather Logo"
+                srcset="images/weather1.png 1x, images/weather2.png 2x, images/weather3.png 3x">
+        </figure>
+
+        <div class="headings">
+            <h2>SeasonFeel</h2>
+            <div class="motto">
+                <h2>The weather you feel</h2>
             </div>
-        </header>
-    
-        <!-- NAVIGATION HERE -->
-        <nav class="navclass">
-            <ul>
-                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li ><a href="#" title="Preston">Preston</a></li>
-                <li><a href="#" title="Soda Springs">Soda Springs</a></li>
-                <li><a href="#" title="Fish Haven">Fish Haven</a></li>
-                <li><a href="#" title="Storm Center">Storm Center</a></li>
-                <li class="active"><a href="#" title="Gallery">Gallery</a></li>
-            </ul>
-        </nav>
-    
+        </div>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="navclass">
+        <ul>
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="#" title="Storm Center">Storm Center</a></li>
+            <li class="active"><a href="#" title="Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
     <!-- CONTENT HERE -->
 
     <main>
-        <section> 
-                <H1>Weather Gallery</H1>
-                <article class="grid">
-                    <div><img src="images/weather.png" alt="Weather Logo"></div>
-                    <div><img src="images/weather.png" alt="Weather Logo"></div>
-                    <div><img src="images/weather.png" alt="Weather Logo"></div>
-                    <div><img src="images/weather.png" alt="Weather Logo"></div>
-                    <div><img src="images/weather.png" alt="Weather Logo"></div>
-                    <div><img src="images/weather.png" alt="Weather Logo"></div>
-                </article>
-                
-        </section>
         
+            <H1>Weather Gallery</H1>
+            <section class="gallery">
+                <figure class="gallery_item">
+                    <img class="gallery_image" src="images/snow.jpg"  alt="Winter">
+                    <figcaption>Winter</figcaption>
+                </figure>
+
+                <figure class="gallery_item" >
+                    <img class="gallery_image" src="images/spring.jpg"  alt="Spring">
+                    <figcaption>Spring</figcaption>
+                </figure>
+
+                <figure class="gallery_item" >
+                    <img class="gallery_image" src="images/Summer.jpg" alt="Summer">
+                    <figcaption>Summer</figcaption>
+                </figure>
+
+                <figure class="gallery_item" >
+                        <img class="gallery_image" src="images/yellow-autumn.jpg"  alt="Autumn">
+                        <figcaption>Autumn</figcaption>
+                    </figure>
+
+                    
+                <figure class="gallery_item" >
+                        <img class="gallery_image" src="images/thunderstorm.jpg"  alt="thunderstorm">
+                        <figcaption>Thunderstorm</figcaption>
+                    </figure>
+                    
+                <figure class="gallery_item" >
+                        <img class="gallery_image" src="images/hurrice.jpg"  alt="Hurricane">
+                        <figcaption>Hurricane</figcaption>
+                    </figure>
+
+
+            </section>
+
+      
+
     </main>
 
 
@@ -70,14 +96,14 @@
             &copy;Copyright2019, Giselle Araújo | Utah |
             <span id="renderTime"></span>
             <span id="toggleMenu"></span>
-           
-        
+
+
         </div>
 
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/windchill.js"></script>
+    
 
 
 </body>

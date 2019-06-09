@@ -62,8 +62,8 @@ header figure.logo {
 .motto {
     font-size: 12px;
     font-style: italic;
-    margin-top: -40px;
-    padding-left: -10px;
+    margin-top: 0px;
+    padding-left: 0px;
      
 }
    
@@ -182,15 +182,17 @@ table {
 }
 
 .stats {
+    
 	position: absolute;
 	top: 25px;
 	right: 50px;
 	background: radial-gradient(#eee, #fcf125);
 	border:1px solid #fcf125;
-	padding:1.5rem;
+	padding:1rem;
     box-shadow:0 0 30px #fcf125;
     opacity: 0.8;
     font-family: 'Quicksand', sans-serif;
+  
 
    
 }
@@ -238,8 +240,17 @@ main figure.photo1 figcaption {
     margin: 0;    
 
 }
+.contectinfo {
+  color: #005a66;
+  text-align: center;
+  align-items: center;
+ 
 
-
+}
+.map {
+    background: #005a66 ;
+    
+}
 /*----------- FOOTER --------------*/
 
 footer .footer {
