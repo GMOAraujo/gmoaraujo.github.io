@@ -16,10 +16,9 @@ body {
 /*----------- HEADER --------------*/
 header {
     width: 100%;
-	margin: 10px auto;
+	margin: auto;
 	background-color: #005a66;
-	border: 1px solid  #005a66;
-    text-align: center;
+	text-align: center;
     font-size: 25px; 
     font-family: 'Quicksand', sans-serif;
     border-radius: 0px;
@@ -143,9 +142,19 @@ li a:hover:not(.active) {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-     
+ 
   
 
+}
+.gallery header {
+    width: 100%;
+	margin: auto;
+	background-color: #f4a70c;
+	text-align: center;
+    font-size: 20px; 
+    font-family: 'Quicksand', sans-serif;
+    color: #fcfff9;
+   
 }
 .gallery_item{
     width:100%;
