@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>SeasonFeel</title>
+    <meta name="description" content="Gallery.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large-8.css">
+    <link rel="stylesheet" href="css/medium-8.css">
+    <link rel="stylesheet" href="css/small-8.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/weather.png" alt="Weather Logo"
+                srcset="images/weather1.png 1x, images/weather2.png 2x, images/weather3.png 3x">
+        </figure>
+
+        <div class="headings">
+            <h2>SeasonFeel</h2>
+            <div class="motto">
+                <h2>The weather you feel</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="navclass">
+        <ul>
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li  class="active"><a href="#" title="Storm Center">Storm Center</a></li>
+            <li><a href="#" title="Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT HERE -->
+
+    <main>
+
+            <h1>Storm Report</h1>
+            <form method="GET" action="thanks.html">
+                <fieldset>
+                    <legend>Personal Informations</legend>
+                    <label class="top">Full Name*<input type="text" name="fname" required></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="9993334466" required></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Zip Code*<input type="zipcode" name="zipcode" placeholder="234654788"></label>
+    
+                </fieldset>
+
+                <fieldset>
+                    Storm Date<input type="date" name="stormDate"></label>
+
+                </fieldset>
+
+
+
+    
+        
+           
+      
+
+    </main>
+
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="footer">
+
+
+            &copy;Copyright2019, Giselle Araújo | Utah |
+            <span id="renderTime"></span>
+            <span id="toggleMenu"></span>
+
+
+        </div>
+
+    </footer>
+    
+    <script src="js/hamburger.js"></script>
+    
+
+
+</body>
+
+</html>
