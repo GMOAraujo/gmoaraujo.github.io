@@ -40,7 +40,7 @@
             <li><a href="#" title="Preston">Preston</a></li>
             <li><a href="#" title="Soda Springs">Soda Springs</a></li>
             <li><a href="#" title="Fish Haven">Fish Haven</a></li>
-            <li  class="active"><a href="#" title="Storm Center">Storm Center</a></li>
+            <li class="active"><a href="#" title="Storm Center">Storm Center</a></li>
             <li><a href="#" title="Gallery">Gallery</a></li>
         </ul>
     </nav>
@@ -49,28 +49,70 @@
 
     <main>
 
-            <h1>Storm Report</h1>
-            <form method="GET" action="thanks.html">
-                <fieldset>
-                    <legend>Personal Informations</legend>
-                    <label class="top">Full Name*<input type="text" name="fname" required></label>
-                    <label class="top">Phone*<input type="tel" name="phone" placeholder="9993334466" required></label>
-                    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                    <label class="top">Zip Code*<input type="zipcode" name="zipcode" placeholder="234654788"></label>
-    
-                </fieldset>
+            <header><h1>Storm Report</h1></header>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Personal Informations</legend>
+                <label class="top">Full Name*<input type="text" name="fname" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="9993334466" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Zip Code*<input type="zipcode" name="zipcode" placeholder="234654788"></label>
 
-                <fieldset>
-                    Storm Date<input type="date" name="stormDate"></label>
+            </fieldset>
 
-                </fieldset>
+            <fieldset>
+
+                <legend>Storm Report</legend>
+                <label  class="top">Storm Date <input type="date" name="stormDate"></label>
+
+                <label class="top" for="stormType">Storm Type </label>
+                <input name="stormType" list="stormTypelist">
+                <datalist id="stormTypelist">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+                <label class="top" for="rating">Storm Severity (1 to 10)</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+                    onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span><br>
+
+
+                <label class="top">Storm Region
+                    <select name="subject">
+                        <option value="">Select Region ...  &#9662</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sugarCity">Sugar City</option>
+
+
+                    </select>
+                </label>
+
+                <div>User In-Danger?</div>
+                <label class="sbs"><input type="radio" name="User In-Danger" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="User In-Dangere" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="User In-Danger" value="yes"> Yes</label>
+                <div>
+                    
+                <textarea rows="4" cols="50">Comments</textarea>
+
+                </div>
+
+            </fieldset>
+
+            <input type="submit" value="Propose My Course" class="submitBtn">
 
 
 
-    
-        
-           
-      
+
+
+
+
 
     </main>
 
@@ -88,9 +130,10 @@
         </div>
 
     </footer>
-    
+
     <script src="js/hamburger.js"></script>
-    
+    <script src="js/rating.js"></script>
+
 
 
 </body>
