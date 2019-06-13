@@ -142,7 +142,7 @@ li a:hover:not(.active) {
 
 form fieldset {
     margin:2rem 0;
-    border:1px solid #005a66;
+    border:2px solid #005a66;
     border-radius:10px;
     padding:.5rem 2%;
 
@@ -152,6 +152,7 @@ form legend {
     color:#005a66;
     margin:0 1rem;
     padding: 0.5rem;
+    font-size: 2rem;
 
 }
 
@@ -167,7 +168,7 @@ form label.top input, label.top select{
    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: solid 1px #999;
+    border: solid 1px #005a66;
     border-radius:4px;
     padding: .75rem;
     color: #555;
@@ -175,6 +176,7 @@ form label.top input, label.top select{
     max-width:20rem;
     background-color: rgba(0,0,0,0,1);
 }
+
 
 form label.sbs {
     display: block;
