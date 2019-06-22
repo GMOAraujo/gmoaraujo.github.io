@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>SeasonFeel</title>
+    <meta name="description" content="Preston page.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large-9.css">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/weather.png" alt="Weather Logo"
+                srcset="images/weather1.png 1x, images/weather2.png 2x, images/weather3.png 3x">
+        </figure>
+
+        <div class="headings">
+            <h2>SeasonFeel</h2>
+            <div class="motto">
+                <h2>The weather you feel</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="navclass">
+        <ul>
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="active"><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Preston">Preston</a></li>
+            <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="#" title="Storm Center">Storm Center</a></li>
+            <li><a href="#" title="Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT HERE -->
+  
+
+    <section>
+        
+    </section>
+   
+        
+        <script>
+           
+           var section = document.querySelector('section');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+            var towndata = request.response;
+            populateHeader(towndata);
+            towndata(towndata);
+            }
+            
+            
+            
+            function towndata(jsonObj) {
+            var heroes = jsonObj['members'];
+                
+            for (var i = 0; i < heroes.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myList = document.createElement('ul');
+            
+                myH2.textContent = heroes[i].name;
+                myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+                myPara2.textContent = 'Age: ' + heroes[i].age;
+                myPara3.textContent = 'Superpowers:';
+                    
+                var superPowers = heroes[i].powers;
+                for (var j = 0; j < superPowers.length; j++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = superPowers[j];
+                myList.appendChild(listItem);
+                }
+            
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+            
+                section.appendChild(myArticle);
+            }
+            }
+         </script>
+        
+
+        
+
+   
+
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="footer">
+
+
+            &copy;Copyright2019, Giselle Araújo | Utah |
+            <span id="toggleMenu"></span>
+            <span id="currentdate"></span>
+
+
+
+        </div>
+
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    
+
+
+</body>
+
+</html>
