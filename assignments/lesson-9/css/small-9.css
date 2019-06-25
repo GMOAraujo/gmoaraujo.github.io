@@ -139,15 +139,13 @@ li a:hover:not(.active) {
 
 
 
-
-
 /*----------- FOOTER --------------*/
 
 footer .footer {
 
     width: 100%;
     height: 50px;
-    margin: 5px 0 0 0;
+    margin: 5% 0 0 0;
 	background-color: #005a66;
     font-family: 'Quicksand', sans-serif;
     color:#fcfff9;
