@@ -156,45 +156,7 @@ main {
 
 
 }
-.herodiv {
-    margin: 10px auto;
-    position: relative;
-}
 
-
-.fivedaysforecast {
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-
-
-}
-
-table {
-
-    text-align: center;
-    display: inline-block;
-    
-    font-size: 20px;
-}
-
-.weathericon {
-    height: 40px;
-
-}
-
-.stats {
-	position: absolute;
-	top: 25px;
-	right: 50px;
-	background: radial-gradient(#eee, #fcf125);
-	border:1px solid #fcf125;
-	padding:1rem;
-    box-shadow:0 0 30px #fcf125;
-    opacity: 0.8;
-    font-family: 'Quicksand', sans-serif;
-
-   
-}
 
 article {
 
