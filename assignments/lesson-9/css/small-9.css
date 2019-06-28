@@ -7,162 +7,216 @@
 * {-webkit-box-sizing: border-box; box-sizing: border-box;} 
 
 
-/*----------- BODY --------------*/
-body {
-	background-color: #fcfff9;
-}
+    /*----------- BODY --------------*/
+    body {
+        background-color: #fcfff9;
+    }
 
-/*----------- HEADER --------------*/
-header {
-    width: 100%;
-	margin: 10px auto;
-	background-color: #005a66;
-	border: 1px solid  #005a66;
-    text-align: center;
-    font-size: 25px; 
-    font-family: 'Quicksand', sans-serif;
-    border-radius: 0px;
-     
-}
-header h6 {
+    /*----------- HEADER --------------*/
+    header {
+        width: 100%;
+        margin: 10px auto;
+        background-color: #005a66;
+        border: 1px solid  #005a66;
+        text-align: center;
+        font-size: 25px; 
+        font-family: 'Quicksand', sans-serif;
+        border-radius: 0px;
+        
+    }
+    header h6 {
 
-    margin-top: -20px;
-}
+        margin-top: 20px;
+    }
 
-header figure.logo {
-      float: left;
-      margin:0;
-   
+    header figure.logo {
+        float: right;
+        margin:0;
+    
 
-}
-.clearfix {
-    display:flex;
-}
-.headings {
+    }
+    .clearfix {
+        display:flex;
+    }
+    .headings {
+    
+        width: 100%;	
+        vertical-align:middle;
+        color: #fcfff9;
+        font-size:30px;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 0px;
+        position:relative;
+        
+    
+    }
+
+    .bannerphoto {
+        width:100%;
+        height: 400px;
+        vertical-align:middle;
+        
+
+
+    }
+
+    .motto {
+        font-size: 12px;
+        font-style: italic;
+        margin-top: 0px;
+    
+        
+    }
+    
+    /*----------- NAVIGATION --------------*/
+
+
+
+    nav {
+        text-align: center;
+        list-style-type: none;
+        color: #fcfff9;
+
+    }
+    .navclass {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .navclass > ul {
+        background:  #005a66;
+        color:#fcfff9;
+        font-size: 20px;
+        box-shadow: 0 0 10px  #f4a70c;
+        font-family: 'Quicksand', sans-serif;
+        
+    }
+
+
+
+    .navclass li:first-child {
+    
+        display:block;
+    }
+
+    .navclass li {
+        display:none;
+    }
+    .navclass li a { 
+        color: #fcfff9;
+        text-decoration: none;
+        padding: 5px;
+        
+    
+    }
+
+    .navclass a:hover {
+        color: #f4a70c; 
+        font-weight: bolder;
+    
+    }
+
+    .responsive li { display: block; }
+
+    li a:hover:not(.active) {
+        background-color: #f4a70c;
+        color: #005a66;
+    }
+        
+    .active {
+        background-color:  #f4a70c;
+    
+    }
+
+
+
+
+    /*----------- MAIN --------------*/
+    section article {
+        width: 100%;
+        box-shadow: #005a66;
+    
+    }
+    
+    section p {
+        margin: 5px 5px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    
+    
+    section h2 {
+        font-size: 2rem;
+        letter-spacing: 0px;
+        margin-bottom: 5px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        
+    }
+    section h3 {
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        margin-bottom: 5px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+    }
+    section img{
+        width: 100%
+    }
+
+    
+
+
+    }
+
+    /*----------- FOOTER --------------*/
+
+    footer .footer {
+
+        width: 50%;
+        height: 50px;
+        margin: 0 ;
+        background-color: #005a66;
+        font-family: 'Quicksand', sans-serif;
+        color:#fcfff9;
+        text-align: center;
+    }
+
+
+    /* Media Query for medium + screens */
+    @media only screen and (max-width: 45em) {
+
+        .navclass li:first-child { display: none}
+        .navclass li {display: inline-block; margin-right: 1rem;}	
+        .navclass li a { color:#fcfff9;}
+
+        
+        section.towndata{
+            display: grid;
+            grid-template-columns: 300px;
+            
+            }
+        .headings {
+            position: relative;
+            width: 100%;
+
+
+        }
+
+    }
+
   
-    width: 100%;	
-	vertical-align:middle;
-    color: #fcfff9;
-    font-size:40px;
-    font-style: normal;
-    text-align: center;
-    margin-bottom: 0px;
-   
-}
 
-.bannerphoto {
-    width:100%;
-    height: 400px;
-    vertical-align:middle;
-    
-
-
-}
-
-.motto {
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 0px;
-    padding-left: 0px;
-     
-}
-   
-/*----------- NAVIGATION --------------*/
-
-
-
-nav {
-    text-align: center;
-    list-style-type: none;
-    color: #fcfff9;
-
-}
- .navclass {
-
-    list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
- }
-
- 
-.navclass > ul {
-    background:  #005a66;
-    color:#fcfff9;
-    font-size: 20px;
-    box-shadow: 0 0 10px  #f4a70c;
-    font-family: 'Quicksand', sans-serif;
-    
-}
-
-
-
-.navclass li:first-child {
-   
-    display:block;
-}
-
-.navclass li {
-    display:none;
-}
-.navclass li a { 
-    color: #fcfff9;
-    text-decoration: none;
-    padding: 5px;
-    
-  
-}
-
-.navclass a:hover {
-    color: #f4a70c; 
-    font-weight: bolder;
- 
-}
-
-.responsive li { display: block; }
-
-li a:hover:not(.active) {
-    background-color: #f4a70c;
-    color: #005a66;
-}
-    
-.active {
-    background-color:  #f4a70c;
-  
-}
-
-
-
-
-/*----------- MAIN --------------*/
-
-
-
-/*----------- FOOTER --------------*/
-
-footer .footer {
-
-    width: 100%;
-    height: 50px;
-    margin: 5% 0 0 0;
-	background-color: #005a66;
-    font-family: 'Quicksand', sans-serif;
-    color:#fcfff9;
-    text-align: center;
-}
-
-
-/* Media Query for medium + screens */
-@media only screen and (min-width: 45em) {
-    .navclass li:first-child { display: none}
-      .navclass li {display: inline-block; margin-right: 1rem;}	
-      .navclass li a { color:#fcfff9;}
-  }
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    /*----- Clearfix: Force an Element not to collapse -----*/
+    .clearfix:after {
+        width: 100%;
+        content: "";
+        display: table;
+        clear: both;
+    }

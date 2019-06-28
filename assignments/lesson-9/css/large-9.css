@@ -15,7 +15,7 @@ body {
 /*----------- HEADER --------------*/
 header {
     width: 100%;
-	margin: 10px auto;
+	margin: 0;
 	background-color: #005a66;
 	border: 1px solid  #005a66;
     text-align: center;
@@ -26,11 +26,11 @@ header {
 }
 header h6 {
 
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 header figure.logo {
-      float: left;
+      float: center;
       margin:0;
    
 
@@ -43,10 +43,11 @@ header figure.logo {
     width: 100%;	
 	vertical-align:middle;
     color: #fcfff9;
-    font-size:40px;
+    font-size:30px;
     font-style: normal;
     text-align: center;
     margin-bottom: 0px;
+
    
 }
 
@@ -62,8 +63,8 @@ header figure.logo {
 .motto {
     font-size: 12px;
     font-style: italic;
-    margin-top: -40px;
-    padding-left: -10px;
+    margin-top: 1px;
+    padding-left: 10px;
      
 }
    
@@ -202,6 +203,7 @@ article {
     background: #f4a70c;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
+
     
 }
 
@@ -226,7 +228,7 @@ main figure.photo1 img{
 main figure.photo1 figcaption {
     text-align: center;
     font-size: 1rem;
-    margin-top: -20px;
+    margin-top: 2px;
     
     
   
@@ -240,13 +242,57 @@ main figure.photo1 figcaption {
 }
 
 
+section article {
+    width: 100%;
+    box-shadow: #005a66;
+
+}
+
+section p {
+    margin: 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+section h2 {
+    font-size: 2rem;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    
+}
+section h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+section img{
+    width: 100%
+}
+
+h1{
+    width: 100%;
+	margin: 0 5px 5px 0;
+	background-color: #f4a70c;
+	color: #fcfff9;
+    text-align: center;
+    font-size: 40px; 
+    font-family: 'Quicksand', sans-serif;
+    
+  
+}
+
 /*----------- FOOTER --------------*/
 
 footer .footer {
 
     width: 100%;
     height: 50px;
-    margin: 5px 2% 0 2%;
+    margin: 5px 0 0 0;
 	background-color: #005a66;
     font-family: 'Quicksand', sans-serif;
     color:#fcfff9;
@@ -259,10 +305,21 @@ footer .footer {
     .navclass li:first-child { display: none}
       .navclass li {display: inline-block; margin-right: 1rem;}	
       .navclass li a { color:#fcfff9;}
+      
+section.json-cities{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    box-shadow: 5px 10px 10px gray;
+  
+    padding: .5rem;
+    }
   }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
+.clearfix:before {
+
     content: "";
     display: table;
     clear: both;

@@ -46,60 +46,23 @@
     </nav>
 
     <!-- CONTENT HERE -->
-    <section>
 
-    </section>
+    <main>
+        <div>
+        <h1>Home</h1>
+        </div>
 
-   
+        <img class="bannerphoto" src="images/cit230_image_franklinOriginal.jpeg" alt="Sunny Day" sizes="100vw"
+            srcset="images/cit230_image_franklinOriginal_400.jpg 400w, images/cit230_image_franklinOriginal_800.jpg 800w, images/cit230_image_franklinOriginal_1200.jpg 1200w">
 
-    <script>
+        <section class="json-cities">
+
+        </section>
+
+    </main>
 
 
-        var section = document.querySelector('section');
-        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-        var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
 
-        request.onload = function() {
-        var towndata = request.response;
-        showTowns(towndata);
-    }
-
-            function towndata(jsonObj) {
-      var towns = jsonObj['name'];
-
-      for (var i = 0; i < towns.length; i++) {
-        var myArticle = document.createElement('article');
-        var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
-        var myList = document.createElement('ul');
-
-        myH2.textContent = towns[i].name;
-        myPara1.textContent = 'Name: ' + towns[i].name;
-        myPara2.textContent = 'Motto: ' + towns[i].motto;
-        myPara3.textContent = 'Year Founded:'+ towns[i].yearFounded;
-        myPara4.textContent = 'Population:'+ towns[i].currentPopulation;
-        myPara5.textContent = 'Annual Rain Fall:'+ towns[i].averageRainfall;
-
-  
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
-
-        section.appendChild(myArticle);
-      }
-    }
-  </script>
-    
- 
-
-    
 
     <!-- FOOTER HERE -->
     <footer>
@@ -108,7 +71,12 @@
 
             &copy;Copyright2019, Giselle Araújo | Utah |
             <span id="toggleMenu"></span>
-         
+            <span id="renderTime"></span>
+            
+            
+            
+            
+
 
 
 
@@ -117,6 +85,7 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/json-cities.js"></script>
 
 
 

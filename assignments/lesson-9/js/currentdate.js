@@ -8,8 +8,7 @@ function fourdigits(number){
 return (Number<1000) ? number = 1900 : number;
 }
 
-var today = days[now.getDay()] + ", " + months[now.getMonth()] + " " + date + ", " + fourdigits(now.getYear()); 
-var year = now.getYear();
+var today = days[now.getDay()] + ", " + months[now.getMonth()] + " " + date + ", " + fourdigits(now.getFullYear()); 
 document.getElementById("renderTime").innerHTML = today;
 
 
