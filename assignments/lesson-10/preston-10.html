@@ -49,11 +49,11 @@
         <h2 class="pagename">Preston, Idaho</h2>
         <div class="herodiv">
             <figure>
-            <img class="bannerphoto" src="images/cit230_image_franklinOriginal.jpeg" alt="Sunny Day" sizes="100vw"
-                srcset="images/cit230_image_franklinOriginal_400.jpg 400w, images/cit230_image_franklinOriginal_800.jpg 800w, images/cit230_image_franklinOriginal_1200.jpg 1200w">
+                <img class="bannerphoto" src="images/cit230_image_franklinOriginal.jpeg" alt="Sunny Day" sizes="100vw"
+                    srcset="images/cit230_image_franklinOriginal_400.jpg 400w, images/cit230_image_franklinOriginal_800.jpg 800w, images/cit230_image_franklinOriginal_1200.jpg 1200w">
             </figure>
-           
-                <section class="stats">
+
+            <section class="stats">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="value1"></span></p>
                 <p>High: <span id='temperaturevalue'></span>&deg; F </p>
@@ -76,18 +76,18 @@
                     <td>Sun</td>
                 </tr>
                 <tr>
-                    <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
+                    <td><img id='weather_icon' class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
                     <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"> </td>
                     <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
                     <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
                     <td><img class="weathericon" src="images/sunicon.jpg" alt="weather icon"></td>
                 </tr>
                 <tr>
-                    <td><span id='temperaturevalue'></span>&deg;F</td>
-                    <td>87&deg;F</td>
-                    <td>91&deg;F</td>
-                    <td>86&deg;F</td>
-                    <td>65&deg;F</td>
+                    <td><span id='Wed'></span>&deg;F</td>
+                    <td><span id='Thu'></span>&deg;F</td>
+                    <td><span id='Fri'></span>&deg;F</td>
+                    <td><span id='Sat'></span>&deg;F</td>
+                    <td><span id='Sun'></span>&deg;F</td>
                 </tr>
 
             </table>
@@ -132,32 +132,64 @@
             </p>
         </article>
 
-        <div class="contectinfo">
-            <div>
+        <div class="container2">
+
+            <div class='item1'>
                 <h2>WeatherFeel</h2>
                 <p>
-                    <img src="images/local.jpg" width="20" alt="local icon"> 3445 N 256<br>Preston, Idaho
+                    <img src="images/locate.png"  alt="local icon"> 3445 N 256<br>Preston, Idaho
                 </p>
                 <p>
-                    <img src="images/phone.jpg" width="20" alt="phone icon"> 999 - 999-9999
+                    <img src="images/telephone.png"  alt="phone icon"> 999 - 999-9999
                 </p>
                 <p>
-                    <img src="images/e-mail.jpg" width="20" alt="e-mail icon"> contact@weatherfeel
+                    <img src="images/at.png"  alt="e-mail icon"> contact@weatherfeel
                 </p>
-                <div class="map">
-                    <p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.5715678158!2d-111.95036570839675!3d42.09972565443593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1560045345805!5m2!1sen!2sus"
-                            width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </p>
-                </div>
+
+               
+
+                    <ul>
+                        <li><img src="images/facebook.png"  alt="local icon"><a href="https://www.facebook.com/" ></a></li>
+                        <li><img src="images/instagram.png"  alt="local icon"></li>
+                        <li><img src="images/twitter.png"  alt="local icon"></li>
+                        <li><img src="images/youtube.png"alt="local icon"></li>
+
+                    </ul>
+
+
+               
+
+
             </div>
 
+            <div class='item2'>
+                <p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.5715678158!2d-111.95036570839675!3d42.09972565443593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1560045345805!5m2!1sen!2sus"
+                        width="300" height="200" frameborder="3" style="border:1" allowfullscreen></iframe>
+                </p>
+            </div>
 
 
         </div>
 
-
+        
+    
     </main>
+
+    <div>
+        
+
+
+        <section class="json-cities">
+                <h1>Events</h1>
+            
+
+        </section>
+        </div>
+
+        
+        
 
 
     <!-- FOOTER HERE -->
@@ -176,8 +208,9 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/weatherapi.js"></script>
+     <script src="js/json-cities.js"></script>
+    <script src="js/windchill.js"></script>
 
 
 </body>
