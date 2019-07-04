@@ -33,15 +33,42 @@ weatherRequest.onload =  function () {
     
         let fiveday = JSON.parse(fivedayRequest.responseText);
         console.log(fiveday);
-        
-
-
-
-        
+               
     
+             for  (i = 0; i < 5; ++i) {
+           // document.getElementById('WedDay').innerHTML = fiveday.list[4].dt_txt;
+            time = fiveday.list[i].dt_txt;
+           // if (time.includes('18:00:00')) {
+
+                var date = new Date (fiveday.list[i].dt_txt * 1000);
+                var days = ["Sunday", "Monday", "Tuesday","Wednesday","Thursday", "Saturday" ];
+                var months = ["January", "February", "March", "April", "May", "June","July", "August","September", "October", "November", "December"];
+                var findDate = days[i] + "<br>" + months[i] + " " + date;
+
+                
+                document.getElementById('WedDay').innerHTML = fiveday.list[4].dt_txt;
+
+               
+
+                var fiveTemp= fivedayRequest.list[i].main.temp;
+                fiveTemp= Math.round(fiveTemp);
+                fiveDaystemp.push(fiveTemp);
+
+                var iconcode = fivedayRequest.list[i].weather[4].icon;
+                var icon_path = "https://openweathermap.org/img/wn/" + iconcode + ".png";
+                fiveDaysicons.push(icon_path);
+
+                //Days
+                var day = days[0];
+                document.getElementById('WedDay').setAttribute('src',  weatherData.list.length);
+            
+           // }
+            
+          
+        }
         
 
-    }//end of onload
+    }
 
 
 
