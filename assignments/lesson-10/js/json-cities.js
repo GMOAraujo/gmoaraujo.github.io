@@ -54,3 +54,4 @@ request.onload = function () {
         section.appendChild(myUl);
     }
 
+    var days = ["Sunday", "Monday", "Tuesday","Wednesday","Thursday", "Saturday" ];

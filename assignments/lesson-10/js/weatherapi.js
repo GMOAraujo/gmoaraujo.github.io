@@ -30,22 +30,19 @@ weatherRequest.onload =  function () {
     fivedayRequest.send();
     
     fivedayRequest.onload =  function () {
-        let weatherData = JSON.parse(fivedayRequest.responseText);
-        console.log(weatherData);
-
+    
+        let fiveday = JSON.parse(fivedayRequest.responseText);
+        console.log(fiveday);
         
 
-        document.getElementById('Wed').innerHTML = weatherData.list[5].main.temp.toFixed(0);
-        document.getElementById('Thu').innerHTML = weatherData.list[5].main.temp.toFixed(0);
-        document.getElementById('Fri').innerHTML = weatherData.list[5].main.temp.toFixed(0);
 
 
-        const iconcode = weatherData.list[4].weather[0].icon;        
+        
+    
+        
 
-        const icon = '//openweathermap.org/img/w/'+ iconcode +'png';
-        console.log(icon);
-        document.getElementById('weather_icon').src = icon;
+    }//end of onload
 
 
 
-    }
+    
