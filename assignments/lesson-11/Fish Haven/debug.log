@@ -1,4 +1,0 @@
-[0629/131222.474:ERROR:process_info.cc(359)] UncheckedAllocate
-[0629/131710.032:ERROR:process_info.cc(359)] UncheckedAllocate
-[0629/131900.750:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: {Cota insuficiente} A cota de arquivo de paginação ou de memória virtual disponível é insuficiente para completar a operação especificada. (0xc0000017)
-[0629/131942.330:ERROR:process_info.cc(359)] UncheckedAllocate
