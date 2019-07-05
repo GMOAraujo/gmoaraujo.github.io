@@ -277,20 +277,26 @@ main figure.photo1 figcaption {
   .media li {
    list-style: none;
    display:inline-block;
+ 
    
-  
-  
-  }
-  section.json-cities {
-      background: #f4a70c;
-      display:flex;
+   }
+   section.json-cities {
+    display: flex;   
+    background: #f4a70c;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #fcfff9;
     
-  
-  }
-  
-  section.json-cities li {
-  list-style:none;
-  }
+   
+   }
+   
+   
+   section.json-cities li {
+   list-style:none;
+   text-align: center;
+   }
   /*----------- FOOTER --------------*/
   
   footer .footer {

@@ -283,9 +283,9 @@ main figure.photo1 figcaption {
 
 }
 section.json-cities {
+    
     background: #f4a70c;
-    display: flex;
-   margin: 50px 265px; 	
+    display:flex;
     justify-items: center;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
