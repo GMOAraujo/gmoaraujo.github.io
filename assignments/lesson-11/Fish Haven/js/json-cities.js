@@ -16,7 +16,7 @@ request.onload = function () {
 
         for (townindex = 0; townindex < towns.length; townindex++) {
 
-            if (towns[townindex].name == 'Preston')
+            if (towns[townindex].name == 'Fish Haven')
                 populateCityData(towns[townindex])
         }
 
