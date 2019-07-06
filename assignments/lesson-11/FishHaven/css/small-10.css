@@ -269,17 +269,26 @@ main figure.photo1 figcaption {
   
   
   .media {
-      position: absolute;
-      left:26%;
-      top:278%;
+     float: initial;
+      left:28%;
+     top:265%;
+    
   
   }
   .media li {
    list-style: none;
    display:inline-block;
- 
-   
    }
+
+   .media img:hover {
+    box-shadow:0 0 20px #f4a70c;
+    width: 30px;    
+    transform: rotate(360deg);
+  
+
+    }
+
+   
    section.json-cities {
     display: flex;   
     background: #f4a70c;
