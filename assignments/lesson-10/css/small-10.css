@@ -281,9 +281,10 @@ main figure.photo1 figcaption {
    }
 
    .media img:hover {
-    box-shadow:0 0 20px #f4a70c;
+    box-shadow:0 0 0 5px #f4a70c;
     width: 30px;    
     transform: rotate(360deg);
+    
   
 
     }
