@@ -270,23 +270,25 @@ main figure.photo1 figcaption {
 
 .media {
     float: initial;
-    
+   
    
  
  }
  .media li {
   list-style: none;
   display:inline-block;
+  
   }
 
-  .media img:hover {
-    width: 30px;    
-    transform: rotate(360deg);
-    box-shadow: #f4a70c;
-    
-  
+  .media img:hover {   
+   width: 30px;    
+   transform: rotate(360deg);
+   box-shadow: 0 #f4a70c;
+   border-radius: 5px;
+   
+ 
 
-    }
+   }
 section.json-cities {
     
     background: #f4a70c;

@@ -28,7 +28,7 @@ header {
 }
 header h6 {
 
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 header figure.logo {
@@ -37,7 +37,7 @@ header figure.logo {
    
 
 }
-.clearfix {
+header.clearfix {
     display:flex;
 }
 .headings {
@@ -73,22 +73,23 @@ header figure.logo {
 
 
 
+
 nav {
     text-align: center;
     list-style-type: none;
     color: #fcfff9;
 
 }
- .navclass {
+.navclass {
 
     list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
- }
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+}
 
- 
+
 .navclass > ul {
     background:  #005a66;
     color:#fcfff9;
@@ -101,7 +102,7 @@ nav {
 
 
 .navclass li:first-child {
-   
+
     display:block;
 }
 
@@ -113,13 +114,13 @@ nav {
     text-decoration: none;
     padding: 5px;
     
-  
+
 }
 
 .navclass a:hover {
     color: #f4a70c; 
     font-weight: bolder;
- 
+
 }
 
 .responsive li { display: block; }
@@ -131,7 +132,7 @@ li a:hover:not(.active) {
     
 .active {
     background-color:  #f4a70c;
-  
+
 }
 
 
@@ -279,12 +280,13 @@ main figure.photo1 figcaption {
   .media li {
    list-style: none;
    display:inline-block;
+   
    }
 
    .media img:hover {   
     width: 30px;    
     transform: rotate(360deg);
-    box-shadow: 0 0 0 1px #f4a70c;
+    box-shadow: 0#f4a70c;
     border-radius: 5px;
     
   
@@ -310,34 +312,21 @@ main figure.photo1 figcaption {
    }
   /*----------- FOOTER --------------*/
   
-  footer .footer {
-  
-      width: 100%;
-      height: 50px;
-      margin: 5% 0 0 0;
-      background-color: #005a66;
-      font-family: 'Quicksand', sans-serif;
-      color:#fcfff9;
-      text-align: center;
       
-  }
-
- 
-
-
-/*----------- FOOTER --------------*/
-
 footer .footer {
 
     width: 100%;
     height: 50px;
     margin: 5% 0 0 0;
-	background-color: #005a66;
+    background-color: #005a66;
     font-family: 'Quicksand', sans-serif;
     color:#fcfff9;
+    padding-top: 10px;
     text-align: center;
-    align-items:baseline;
-}
+    
+ }
+ 
+
 
 
 /* Media Query for medium + screens */

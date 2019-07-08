@@ -280,12 +280,13 @@ main figure.photo1 figcaption {
   .media li {
    list-style: none;
    display:inline-block;
+   
    }
 
    .media img:hover {   
     width: 30px;    
     transform: rotate(360deg);
-    box-shadow: 0 0 0 1px #f4a70c;
+    box-shadow: 0#f4a70c;
     border-radius: 5px;
     
   
@@ -321,6 +322,7 @@ footer .footer {
     font-family: 'Quicksand', sans-serif;
     color:#fcfff9;
     padding-top: 10px;
+    text-align: center;
     
  }
  
