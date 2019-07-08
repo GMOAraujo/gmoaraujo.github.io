@@ -306,18 +306,18 @@ text-align: center;
 }
 /*----------- FOOTER --------------*/
 
+    
 footer .footer {
 
     width: 100%;
     height: 50px;
     margin: 5% 0 0 0;
-	background-color: #005a66;
+    background-color: #005a66;
     font-family: 'Quicksand', sans-serif;
     color:#fcfff9;
-    text-align: center;
+    padding-top: 10px;
     
-}
-
+ }
 
 /* Media Query for medium + screens */
 @media only screen and (min-width: 45em) {

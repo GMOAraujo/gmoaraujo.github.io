@@ -311,18 +311,18 @@ main figure.photo1 figcaption {
    }
   /*----------- FOOTER --------------*/
   
-  footer .footer {
-  
-      width: 100%;
-      height: 50px;
-      margin: 5% 0 0 0;
-      background-color: #005a66;
-      font-family: 'Quicksand', sans-serif;
-      color:#fcfff9;
-      text-align: center;
       
-  }
+footer .footer {
 
+    width: 100%;
+    height: 50px;
+    margin: 5% 0 0 0;
+    background-color: #005a66;
+    font-family: 'Quicksand', sans-serif;
+    color:#fcfff9;
+    padding-top: 10px;
+    
+ }
  
 
 
