@@ -193,6 +193,7 @@ input.submitBtn {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width:20rem;
+    justify-content: center;
 }
 
 form label.top input:required {
@@ -206,12 +207,15 @@ form label.top input:required:valid {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
-    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin: 5% 0 0 0;
+	background-color: #005a66;
+    font-family: 'Quicksand', sans-serif;
+    color:#fcfff9;
+   padding-top: 10px;
+   
 }
-
-
 
 
 /*----------- FOOTER --------------*/

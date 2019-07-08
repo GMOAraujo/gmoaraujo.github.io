@@ -32,6 +32,7 @@ request.onload = function () {
         var myList1 = document.createElement('li');
         var myList2 = document.createElement('li');
         var myList3 = document.createElement('li');
+     
         
 
         myList1.textContent = city.events[0];
@@ -48,6 +49,7 @@ request.onload = function () {
         myUl.appendChild(myList1);
         myUl.appendChild(myList2);
         myUl.appendChild(myList3);
+    
     
        
        

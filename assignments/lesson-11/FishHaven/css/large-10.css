@@ -241,16 +241,16 @@ main figure.photo1 figcaption {
 
 }
 .container2 {
-  display: flex;
-  columns: 1fr 1fr ;
-   justify-content: space-around;	
-   justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr, 1fr)  ;
+     justify-content: space-around;	
+     justify-items: center;
 
   
   background-color: #005a66;
-   margin: 5% 0 0 0;
+  margin: 5% 0 5% 0;
    justify-items: center;
-  
+   padding:10% 0 10% 0;
 }
 
 .item1 {
@@ -269,23 +269,28 @@ main figure.photo1 figcaption {
 
 
 .media {
-    position: absolute;
-    left:26%;
-    top:278%;
-
-}
-.item1 li {
- list-style: none;
- display:inline-block;
- align-items: center;
+    float: initial;
+    
+   
  
+ }
+ .media li {
+  list-style: none;
+  display:inline-block;
+  }
 
+  .media img:hover {
+    width: 30px;    
+    transform: rotate(360deg);
+    box-shadow: #f4a70c;
+    
+  
 
-}
+    }
 section.json-cities {
     
     background: #f4a70c;
-    display:flex;
+    display:grid;
     justify-items: center;
     text-align: center;
     font-family: 'Quicksand', sans-serif;

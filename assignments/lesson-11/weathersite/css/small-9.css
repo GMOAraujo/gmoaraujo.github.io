@@ -14,46 +14,43 @@
 
     /*----------- HEADER --------------*/
     header {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 1fr, 1fr);
         width: 100%;
         margin: 10px auto;
         background-color: #005a66;
         border: 1px solid  #005a66;
         text-align: center;
-        font-size: 25px; 
+        font-size: 35px; 
         font-family: 'Quicksand', sans-serif;
         border-radius: 0px;
-         
+        
     }
     header h6 {
 
         margin-top: 20px;
     }
 
-
     header figure.logo {
-        float: center;
+        float: right;
         margin:0;
-     
-  
-  }
-  header.clearfix {
-    display:flex;
-}
+    
+
+    }
+    .clearfix {
+        display:flex;
+    }
     .headings {
     
-       
-  
-            width: 100%;	
-            vertical-align:middle;
-            color: #fcfff9;
-            font-size:40px;
-            font-style: normal;
-            text-align: center;
-            margin-bottom: 0px;
-           
-        }
+        width: 100%;	
+        vertical-align:middle;
+        color: #fcfff9;
+        font-size:30px;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 0px;
+        position:relative;
+        
+    
+    }
 
     .bannerphoto {
         width:100%;
@@ -133,7 +130,7 @@
     }
         
     .active {
-        background-color: #f4a70c;
+        background-color:  #f4a70c;
     
     }
 
@@ -141,20 +138,20 @@
 
 
     /*----------- MAIN --------------*/
-    section.json-cities article {
+    section article {
         width: 100%;
         box-shadow: #005a66;
     
     }
     
-    section.json-cities p {
+    section p {
         margin: 5px 5px;
         font-family: 'Roboto', sans-serif;
         text-align: center;
     }
     
     
-    section.json-cities h2 {
+    section h2 {
         font-size: 2rem;
         letter-spacing: 0px;
         margin-bottom: 5px;
@@ -162,14 +159,14 @@
         text-align: center;
         
     }
-    section.json-cities h3 {
+    section h3 {
         font-size: 1rem;
         letter-spacing: 0px;
         padding-bottom: 10px;
         font-family: 'Quicksand', sans-serif;
         text-align: center;
     }
-    section.json-cities img{
+    section img{
         width: 100%
     }
 
@@ -180,18 +177,17 @@
 
     /*----------- FOOTER --------------*/
 
-    
-footer .footer {
+    footer .footer {
 
-    width: 100%;
-    height: 50px;
-    margin: 5% 0 0 0;
-    background-color: #005a66;
-    font-family: 'Quicksand', sans-serif;
-    color:#fcfff9;
-    padding-top: 10px;
-    
- }
+        width: 100%;
+        height: 50px;
+        margin: 5% 0 0 0;
+        background-color: #005a66;
+        font-family: 'Quicksand', sans-serif;
+        color:#fcfff9;
+        padding-top: 10px;
+        
+     }
 
     /* Media Query for medium + screens */
     @media only screen and (max-width: 45em) {
