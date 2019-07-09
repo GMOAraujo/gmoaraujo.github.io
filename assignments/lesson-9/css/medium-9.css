@@ -15,10 +15,12 @@ body {
 
 /*----------- HEADER --------------*/
 header {
+    display: grid;
     width: 100%;
-	margin: auto;
+	margin: 10px auto;
 	background-color: #005a66;
-	text-align: center;
+	border: 1px solid  #005a66;
+    text-align: center;
     font-size: 25px; 
     font-family: 'Quicksand', sans-serif;
     border-radius: 0px;
@@ -30,8 +32,9 @@ header h6 {
 }
 
 header figure.logo {
-      float: left;
+      float: center;
       margin:0;
+      padding-left: 30%;
    
 
 }
@@ -47,6 +50,7 @@ header figure.logo {
     font-style: normal;
     text-align: center;
     margin-bottom: 0px;
+    
    
 }
 
@@ -182,6 +186,7 @@ footer .footer {
     font-family: 'Quicksand', sans-serif;
     color:#fcfff9;
     padding-top: 10px;
+    text-align: center;
     
  }
 /* Media Query for medium + screens */

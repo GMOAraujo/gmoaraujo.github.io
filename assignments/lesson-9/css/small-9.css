@@ -8,57 +8,45 @@
 
 
     /*----------- BODY --------------*/
-    body {
-        background-color: #fcfff9;
-    }
+header {
+    display: grid;
+    width: 100%;
+	margin: 10px auto;
+	background-color: #005a66;
+	border: 1px solid  #005a66;
+    text-align: center;
+    font-size: 25px; 
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 0px;
+     
+}
+header h6 {
 
-    /*----------- HEADER --------------*/
-    header {
-        width: 100%;
-        margin: 0;
-        justify-items: center;   
-        background-color: #005a66;
-        border: 1px solid  #005a66;
-        text-align: center;
-        font-size: 35px; 
-        font-family: 'Quicksand', sans-serif;
-        border-radius: 0px;
-        align-items: center;
-        padding: 0;
-         
-    }
-    
-    
-    header h6 {
-    
-        margin-top: 20px;
-    }
-    .logo {
-         
-    
-          padding-left: 10%;
-          display:grid;
-        justify-items: center;  
-       
-    
-    }
-    .clearfix {
-        display:flex;
-    }
-    .headings {
-        display:grid;
-        justify-items: center;   
-        width: 100%;	
-        vertical-align:middle;
-        color: #fcfff9;
-        font-size:30px;
-        font-style: normal;
-        text-align: center;
-        margin-bottom: 0px;
-    
-       
-    }
+    margin-top: -20px;
+}
 
+header figure.logo {
+      float: center;
+      margin:0;
+      padding-left: 30%;
+   
+
+}
+.clearfix {
+    display:flex;
+}
+.headings {
+  
+    width: 100%;	
+	vertical-align:middle;
+    color: #fcfff9;
+    font-size:40px;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 0px;
+    
+   
+}
     .bannerphoto {
         width:100%;
         height: 400px;
@@ -197,6 +185,7 @@ footer .footer {
     font-family: 'Quicksand', sans-serif;
     color:#fcfff9;
     padding-top: 10px;
+    text-align: center;
     
  }
 
