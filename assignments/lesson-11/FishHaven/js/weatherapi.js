@@ -27,7 +27,7 @@ weatherRequest.onload =  function () {
    //Five days Forecast for Preston.
 
    let fivedayRequest = new XMLHttpRequest();
-   let fivedayURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=b98e3357e7b0e7fd3abe8eb2da2f7ea8';
+   let fivedayURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=b98e3357e7b0e7fd3abe8eb2da2f7ea8';
    fivedayRequest.open('Get',fivedayURLstring, true);
    fivedayRequest.send();
 
