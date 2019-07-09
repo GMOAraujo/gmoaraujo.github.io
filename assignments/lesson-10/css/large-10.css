@@ -15,25 +15,29 @@ body {
 /*----------- HEADER --------------*/
 header {
     width: 100%;
-	margin: 10px auto;
+	margin: 0;
 	background-color: #005a66;
 	border: 1px solid  #005a66;
     text-align: center;
-    font-size: 25px; 
+    font-size: 35px; 
     font-family: 'Quicksand', sans-serif;
-    border-radius: 0;
-    display: flex;
-flex-direction: row;
-justify-content: center;
+    border-radius: 0px;
+    align-items: center;
+    padding: 0;
+     
 }
+
+
 header h6 {
 
-    margin-top: -20px;
+    margin-top: 20px;
 }
+.logo {
+     
 
-header figure.logo {
-      float: left;
-      margin:0;
+      padding-left: 10%;
+      display:grid;
+    justify-items: center;  
    
 
 }
@@ -41,14 +45,16 @@ header figure.logo {
     display:flex;
 }
 .headings {
-  
+    display:grid;
+    justify-items: center;   
     width: 100%;	
 	vertical-align:middle;
     color: #fcfff9;
-    font-size:40px;
+    font-size:30px;
     font-style: normal;
     text-align: center;
     margin-bottom: 0px;
+
    
 }
 
@@ -64,8 +70,8 @@ header figure.logo {
 .motto {
     font-size: 12px;
     font-style: italic;
-    margin-top: -40px;
-    padding-left: -10px;
+    margin-top: 1px;
+    padding-left: 10px;
      
 }
    

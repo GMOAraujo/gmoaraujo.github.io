@@ -23,16 +23,21 @@ header {
     font-family: 'Quicksand', sans-serif;
     border-radius: 0px;
     align-items: center;
+    padding: 0;
      
 }
+
+
 header h6 {
 
     margin-top: 20px;
 }
+.logo {
+     
 
-header figure.logo {
-      float: center;
-      margin:0;
+      padding-left: 10%;
+      display:grid;
+    justify-items: center;  
    
 
 }
@@ -40,7 +45,8 @@ header figure.logo {
     display:flex;
 }
 .headings {
-  
+    display:grid;
+    justify-items: center;   
     width: 100%;	
 	vertical-align:middle;
     color: #fcfff9;

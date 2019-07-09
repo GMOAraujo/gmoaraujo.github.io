@@ -189,21 +189,18 @@ footer .footer {
     .navclass li:first-child { display: none}
       .navclass li {display: inline-block; margin-right: 1rem;}	
       .navclass li a { color:#fcfff9;}
+      
+section.json-cities{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    box-shadow: 5px 10px 10px gray;
+  
+    padding: .5rem;
+    }
   }
 
-  
-@media only screen and (min-width: 33.75em){
-    .gallery_item{
-        flex-basis: calc(50% -2rem);
-    }
-
-}
-@media only screen and (min-width: 45em){
-    .gallery_item{
-        flex-basis: calc(100%/4);
-    }
-
-}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
