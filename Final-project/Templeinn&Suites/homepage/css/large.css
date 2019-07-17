@@ -9,7 +9,7 @@ body {
     width:100%;
     position: relative;
     text-align: left;
-   
+    box-shadow: 0px 8px 10px 0px #eeeef1;
     font-family: 'Philosopher', sans-serif;
     background: #fe9a07;
     
@@ -112,7 +112,7 @@ li a:hover:not(.active) {
   position: absolute;
   background-color: #fe9a07;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px #eeeef1;
   z-index: 1;
 }
 
@@ -149,11 +149,7 @@ footer .footer {
 @media only screen and (min-width: 45em) {
     .navclass li:first-child { display: none}
       .navclass li {display: inline-block; margin-right: 1rem;}	
-      .navclass li a { color:#fcfff9;}
+      .navclass li a { color:#eeeef1;}
 
-
-      .item2 {
-        padding:5px 20px 5px 20x;
        
-    }
   }
