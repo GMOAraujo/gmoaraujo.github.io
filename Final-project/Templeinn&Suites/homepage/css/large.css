@@ -1,3 +1,11 @@
+
+/*font-family: 'Amaranth', sans-serif;
+  font-family: 'Sarabun', sans-serif;
+
+*/
+
+
+
 /*----------- BODY --------------*/
 body {
 	background-color: #7e7667;
@@ -59,7 +67,7 @@ body {
     color:#eeeef1;
     font-size: 25px;
     box-shadow: 0 0 10px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sarabun', sans-serif;
     
 }
 
@@ -114,6 +122,7 @@ li a:hover:not(.active) {
   min-width: 160px;
   box-shadow: 0 0 16px 0 #eeeef1;
   z-index: 1;
+  font-family: 'Sarabun', sans-serif;
 }
 
 /* Links inside the dropdown */
@@ -144,7 +153,7 @@ footer .footer {
     color: #1d1712;
     padding-top: 10px;
     box-shadow: 0 0 16px 0 #eeeef1;
-    
+    font-family: 'Sarabun', sans-serif;
  }
 
 /* Media Query for medium + screens */
