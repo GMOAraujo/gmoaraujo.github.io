@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Reservation</title>
+    <meta name="description" content="Reservation page.">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CONTENT HERE -->
+
+    <header>
+        <div class="container">
+            <img src="images/Temple_2.png" alt="Temple_2" style="width:200px;">
+            <div class="bottom-left">Temple </div>
+            <div class="centered">Inn&Suites</div>
+
+        </div>
+
+
+
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="navclass">
+        <ul>
+
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Temples">Temples</a></li>
+            <li class="dropdown"><a href="#" title="Services">Services</a>
+                <div class="dropdown-content">
+
+                    <a href="#" title="Reception">Reception</a>
+                    <a href="#" title="Full-time temple missionary">Full-Time Temple Missionary</a>
+                </div>
+
+            </li>
+            <li  class="active"><a href="#" title="Reservation">Reservation</a></li>
+            <li><a href="#" title="Contact Us">Contact Us</a></li>
+
+
+
+        </ul>
+
+    </nav>
+    <main>
+
+
+        <!-- reservation form beginning -->
+
+        <h1>Reservation Form</h1>
+
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Registrant Informations</legend>
+                <label class="top">Full Name*<input type="text" name="fname" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="9993334466" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">City*<input type="city" name="city" placeholder="New York"></label>
+                <label class="top">Zip Code*<input type="zcode" name="zcode" placeholder="234654788"></label>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Reservation Details</legend>
+                <label class="top">Check In <input type="date" name="checkinDate"></label>
+                <label class="top">Check Out<input type="date" name="checkoutDate"></label>
+
+
+                <label class="top">City
+                    <select name="subject">
+                        <option value="">Select city ... &#9662</option>
+                        <option value="draper">Draper</option>
+                        <option value="provo">Provo</option>
+                        <option value="slc">Salt Lake City</option>
+                        <option value="timpanogos">Timpanogos</option>
+
+
+                    </select>
+                </label>
+                <label class="top">Type of Room
+                    <select name="subject">
+                        <option value="">Number of beds ... &#9662</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </label>
+
+                <label class="top">Number of guests
+                    <select name="subject">
+                        <option value="">Select ... &#9662</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </label>
+                <div>Staying Type</div>
+                <label class="sbs"><input type="radio" name="Staying type" value="longTerm">Long Term (Full-time Temple
+                    Missionaries)</label>
+                <label class="sbs"><input type="radio" name="Staying type" value="shortTerm"> Short term (Non Temple
+                    Missionaries</label>
+
+
+            </fieldset> 
+            
+            <fieldset> 
+                    <legend>Specialized Services</legend>
+                    <div>Please select the services you will need during your stay.</div>
+
+                <div>
+                    <div>Babysitting Service</div>
+                    <label class="sbs"><input type="radio" name="babysittingServices" value="no"> No</label>
+                    <label class="sbs"><input type="radio" name="babysittingServices" value="yes"> Yes</label>
+                </div>
+
+                <div>Wedding Reception</div>
+                <label class="sbs"><input type="radio" name="babysittingServices" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="babysittingServices" value="yes"> Yes</label>
+                <div>
+
+                <div>Family Search Center</div>
+                <label class="sbs"><input type="radio" name="babysittingServices" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="babysittingServices" value="yes"> Yes</label>
+                <div>
+
+                    </label><textarea rows="6" cols="50">Comments</textarea>
+
+                </div>
+
+
+            </fieldset> 
+
+        
+            <input type="submit" value="Send My Reservation" class="submitBtn">           
+
+
+        </form>
+
+
+        <!-- reservation form end -->
+
+
+    </main>
+
+
+</body>
+<!-- FOOTER HERE -->
+<footer>
+    <div class="footer">
+        <small>
+            &copy; Copyright 2019, CIT 230 - Final Project - Giselle Araújo |
+            <span id="renderTime"></span>
+            <span id="toggleMenu"></span>
+        </small>
+    </div>
+
+</footer>
+
+<script src="js/currentdate.js"></script>
+<script src="js/hamburger.js"></script>
+<script src="js/slideshow.js"></script>
+</body>
+
+</html>
