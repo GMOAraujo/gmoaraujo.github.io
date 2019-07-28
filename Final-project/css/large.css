@@ -280,6 +280,7 @@ article header{
 
 }
 .temple_info > div img{
+  width:100%;
   border-radius: 5px;
   box-shadow: 0 0 16px 0 #1d1712;
 }
