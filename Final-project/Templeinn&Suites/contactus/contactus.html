@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Contact Us</title>
+    <meta name="description" content="Reservation page.">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CONTENT HERE -->
+
+    <header>
+        <div class="container">
+            <img src="images/Temple_2.png" alt="Temple_2" style="width:200px;">
+            <div class="bottom-left">Temple </div>
+            <div class="centered">Inn&Suites</div>
+
+        </div>
+
+
+
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="navclass">
+        <ul>
+
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Temples">Temples</a></li>
+            <li class="dropdown"><a href="#" title="Services">Services</a>
+                <div class="dropdown-content">
+
+                    <a href="#" title="Reception">Reception</a>
+                    <a href="#" title="Full-time temple missionary">Full-Time Temple Missionary</a>
+                </div>
+
+            </li>
+            <li class="active"><a href="#" title="Reservation">Reservation</a></li>
+            <li><a href="#" title="Contact Us">Contact Us</a></li>
+
+
+
+        </ul>
+
+    </nav>
+    <main>
+
+
+        <!-- reservation form beginning -->
+
+        <h1>Contact Us</h1>
+
+        <form method="GET" action="confirmation.html">
+            <fieldset>
+
+                <label class="top">Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="fname" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="9993334466" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+
+                <div>Send us your questions about the hotel</div>
+                </label><textarea rows="6" cols="60">Comments</textarea>
+
+                </div>
+                <div>
+
+                    <input type="submit" value="Send My Questions" class="submitBtn">
+                </div>
+            </fieldset>
+
+
+            <div >
+
+                <div >
+                    <h2>Temple Inn&Suites</h2>
+                    <p>
+                        4800 Montgomery Ln #300, Bethesda, MD 20814
+                    </p>
+                    <p>
+                        <img src="images/telephone.png"  alt="phone icon"> 999 - 999-9999
+                    </p>
+                    <p>
+                        <img src="images/at.png"  alt="e-mail icon"> contact@templeinn&suites.com
+                    </p>
+    
+                   
+                  
+    
+    
+                </div>
+    
+                <div class='item2'>
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013225!2d-77.09772048539614!3d38.983251779557555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1564274565481!5m2!1sen!2sus" width="300"frameborder="3" style="border:2" allowfullscreen></iframe>
+                    </p>
+                </div>
+    
+    
+            </div>
+    
+
+
+
+
+
+
+
+        </form>
+
+
+        <!-- reservation form end -->
+
+
+    </main>
+
+
+</body>
+<!-- FOOTER HERE -->
+<footer>
+    <div class="footer">
+        <small>
+            &copy; Copyright 2019, CIT 230 - Final Project - Giselle Araújo |
+            <span id="renderTime"></span>
+            <span id="toggleMenu"></span>
+        </small>
+    </div>
+
+</footer>
+
+<script src="js/currentdate.js"></script>
+<script src="js/hamburger.js"></script>
+<script src="js/slideshow.js"></script>
+</body>
+
+</html>
