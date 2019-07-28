@@ -160,11 +160,12 @@ h1 {
 
 form {
   width:100%;
+  
 }
 
 
 form fieldset {
- 
+ box-align: center;
   margin:2rem 0;
   border:2px solid  #fe9a07;
   border-radius:10px;
@@ -189,6 +190,7 @@ form label.top, form div {
 }
 
 form label.top input, label.top select{
+  box-align: center;
  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
